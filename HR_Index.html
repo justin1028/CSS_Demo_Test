@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- RWD 設定1  渲染寬度等於裝置寬度 設定螢幕畫面的初始縮放比例為 100% -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HR myroute</title>
+  <!-- 引用 reset.css 文件 -->
+  <!-- <link rel="stylesheet" href="reset.css">-->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS */
+    .left-section,
+    .right-section {
+      padding: 5px;
+    }
+/*
+    <!-- RWD 設定2  渲染寬度等於裝置寬度 設定螢幕畫面的初始縮放比例為 100% --> 
+     當 寬度小於798px時隱藏  For myroute 使用 */
+    @media (max-width: 768px) {
+      .hide-on-small-screen {
+        display: none;
+      }
+    }
+
+    .panel {
+      background-color: #f0f0f0;
+      /* Light gray background */
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      /* height: 620px; */
+      /* Border color */
+      width: 100%;
+    }
+
+    .panel-card {
+      background-color: #f0f0f0;
+      /* Light gray background */
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      /* height: 620px; */
+      /* Border color */
+      min-width: 50%;
+    }
+
+    .card {
+      /* margin-bottom: 10px; */
+      background-color: #eef0f3;
+      border-radius: 10px;
+      /* 將邊框設定為圓角 */
+      margin: 10px;
+      max-width: 100%;
+    }
+
+    .card-title {
+      background-color: #054478;
+      /* Gray background */
+      color: #ffffff;
+      /* White text */
+      margin-bottom: 0;
+      padding: 1px;
+      padding-left: 10px;
+      /* 調整此處的 padding-left 來將文字往右縮排 */
+
+
+    }
+
+    .card-body {
+      background-color: #eef0f3;
+      color: #000000;
+      border-top-left-radius: 50px;
+      /* 左上角設為圓角 */
+      border-top-right-radius: 50px;
+      /* 右上角設為圓角 */
+    }
+
+    .card-link {
+      display: block;
+      margin-bottom: 0px;
+      padding: 1px 0;
+      /* Add padding to top and bottom */
+    }
+
+    .card-fontsize {
+      color: #0072BC;
+      background-color: #eef0f3;
+      font-size: 15px;
+      padding-left: 10px;
+      /* 調整此處的 padding-left 來將文字往右縮排 */
+    }
+
+    .card-paddingZero {
+      padding: 0;
+    }
+
+    .card-padding_F {
+      padding: 2px;
+    }
+
+    .link-bg-kimo {
+      background-color: #eef0f3;
+      padding-left: 1px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+
+    }
+
+    .img-title {
+      border-top-left-radius: 10px;
+      /* 左上角設為圓角 */
+      border-top-right-radius: 10px;
+      /* 右上角設為圓角 */
+      max-width: 100%;
+
+      height: 38px;
+      /* 設定寬度最大800PX 但可以小於800 */
+      /* max-width: 800px;   */
+      color: #FFF;
+      font-size: 11pt;
+      border: none;
+    }
+
+    .banner {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="banner">
+    <img src="CID_Banner1.png" alt="Banner Image">
+  </div>
+
+  <div class="container ">
+    <div class="row gx-2 "> <!-- Adjust gap between panels -->
+      <div class="col-md-8">
+        <!-- Left Section -->
+        <div class="panel hide-on-small-screen">
+          <h5 class="card-title img-title  "></h5>
+          <img src="myRoute4.png" alt="Image" class="img-fluid ">
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <!-- Right Section -->
+        <div class="panel-card">
+
+          <div class="card ">
+            <div class="card-body">
+              <h5 class="card-title ">myHome</h5>
+              <ul class="list-group list-group-flush card-fontsize card-link">
+                <li class="list-group-item card-padding_F">任何與自己相關的資訊或想要申請假勤，均可回家處理</li>
+                <li class="list-group-item card-padding_F"> <a href="https://hrportal.cidgroup.com/SCSWeb/default.aspx"
+                    target="_blank">個人首頁</a></li>
+                <li class="list-group-item card-padding_F"> 
+                      <a href="https://hrportal.cidgroup.com/SCSWeb/FormLayout/TListEditFormPanel.aspx?ProgID=V0FUVDAwMjI1MDA%3d"
+                         target="_blank">請假申請</a></li>   
+
+                <li class="list-group-item card-padding_F"> 
+                          <a href="https://hrportal.cidgroup.com/SCSWeb/HRM/ATT/AttEmpSpecLeaveQuery.aspx"
+                             target="_blank">年度休假狀況查詢</a></li>
+
+                <li class="list-group-item card-padding_F">
+                    <a href="https://hrportal.cidgroup.com/SCSWeb/HRM/SAL/SalEmpSalPayrollQuery.aspx"
+                       target="_blank">薪資單查詢頁</a></li>
+
+              </ul>
+            </div>
+          </div>
+  
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">PDP</h5>
+
+              <ul class="list-group list-group-flush card-fontsize card-link">
+                <li class="list-group-item card-padding_F">定期的自我檢視並與主管討論績效目標，努力工作不會浪費</li>
+                <li class="list-group-item card-padding_F"> <a
+                    href="http://ctms.cidgroup.com/cpas/sitemap-page.do?nid=798&pid=2" target="_blank">目標設定</a></li>
+                <li class="list-group-item card-padding_F"><a
+                    href="http://ctms.cidgroup.com/cpas/sitemap-page.do?nid=799&pid=2" target="_blank">目標考核</a></li>
+             </ul>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">e-Pump</h5>
+            <ul class="list-group list-group-flush card-fontsize card-link">
+              <li class="list-group-item card-padding_F">在忙碌的工作中，別忘了透過學習來充實自己</li>
+              <li class="list-group-item card-padding_F"> <a href="http://ctms.cidgroup.com/cltcms/ctms.do" target="_blank">學習首頁</a> </li>
+            
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+ 
+
+  <!-- Bootstrap Bundle JS (Popper.js + Bootstrap JS) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
